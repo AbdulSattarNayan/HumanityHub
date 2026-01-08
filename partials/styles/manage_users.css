@@ -1,0 +1,148 @@
+/* Reset default margins and padding for this page */
+body.manage-users {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    display: block; /* Override flex from styles.css */
+}
+
+/* Header styling */
+body.manage-users header {
+    background-color: #2c3e50; /* Match styles.css */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Match styles.css */
+}
+
+/* Logo styling */
+body.manage-users header .logo img {
+    height: 120px; /* Match styles.css */
+    width: auto;
+}
+
+/* Menu styling */
+body.manage-users header .menu {
+    position: static; /* Override absolute positioning from styles.css */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+body.manage-users header .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+body.manage-users header .menu a:hover {
+    color: #f39c12; /* Match styles.css hover color (chocolate) */
+    text-decoration: underline;
+}
+
+body.manage-users header .menu a.active {
+    background-color: #f39c12; /* Match styles.css */
+    color: black;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+/* Main content styling */
+body.manage-users main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: block; /* Override flex from styles.css */
+    min-height: auto; /* Override styles.css */
+}
+
+/* Admin container styling */
+body.manage-users .admin-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+/* Heading styling */
+body.manage-users .admin-container h1 {
+    font-size: 2rem;
+    color: #f39c12; /* Match styles.css */
+    margin-bottom: 20px;
+    text-align: center;
+    width: auto; /* Override styles.css */
+}
+
+/* Table styling */
+body.manage-users table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+body.manage-users table th, body.manage-users table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+body.manage-users table th {
+    background-color: #00879E; /* Match styles.css theme color */
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+body.manage-users table td {
+    font-size: 1rem;
+    color: #555;
+}
+
+body.manage-users table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Checkbox styling */
+body.manage-users table input[type="checkbox"] {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body.manage-users header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    body.manage-users header .menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    body.manage-users table th, body.manage-users table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    body.manage-users .admin-container {
+        display: flex;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,40 @@
+/* Style the requests section */
+.requests-section {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.requests-section h2 {
+    text-align: center;
+    color: #1a3c4d;
+    margin-bottom: 20px;
+}
+
+/* Style the requests table */
+.requests-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.requests-table th,
+.requests-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.requests-table th {
+    background-color: #1a3c4d;
+    color: white;
+}
+
+.requests-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.requests-table tr:hover {
+    background-color: #f1f1f1;
+}

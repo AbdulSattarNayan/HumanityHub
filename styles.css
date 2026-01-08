@@ -1,0 +1,1013 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers content horizontally */
+    justify-content: center;  /* Centers content vertically */
+    min-height: 60vh; /* Ensures it covers most of the viewport height */
+}
+
+main input {
+    width: 40%; /* Makes input fields 40% of the page width */
+    padding: 10px;
+    margin: 10px 0; /* Adds spacing between inputs */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 20px; */
+    background-color: #2c3e50;
+    position: relative;
+}
+
+.logo img {
+    height: 120px;
+    width: auto;
+}
+
+#charity {
+    align-items: center;
+    justify-content: center;
+    right: auto;
+}
+
+.menu {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: chocolate;
+}
+
+.menu a.active {
+    background-color: #f39c12; /* Highlight color */
+    color: black;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+h1 {
+    text-align: center; /* Centers the heading */
+    width: 100%; /* Makes sure it takes the full width */
+    margin: 20px 0; /* Adds space around */
+    color: #f39c12;
+}
+
+#donner {
+    text-align: center;
+}
+
+.Donate {
+    position: absolute;  /* Makes it stay in place */
+    top: 20px;  /* Adjust to move higher */
+    right: 20px;  /* Align it properly */
+    background-color: green;  
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: blink 2.5s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.reference {
+    height: 400px;
+    width: 100%;
+    background-image: url(img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#msg {
+    width: auto;
+    height: 100px;
+    background-color: #f39c12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 900;
+    color: white;
+    font-size: xx-large;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-container h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.footer-section h3 {
+    color: #ff3b3b;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-top h2 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.login-options {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.login-options button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #1045d9c0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#loginForm {
+    text-align: center;
+    justify-content: center;
+}
+
+#loginForm input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+}
+
+#loginButton {
+    padding: 10px 15px;
+    background-color: #1045d9c0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#loginButton:hover {
+    background: #03da93;
+}
+
+p {
+    text-align: center;
+}
+
+p a {
+    color: #1045d9c0;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+main form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main input, main select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main button {
+    padding: 10px;
+    font-size: 18px;
+    background: #1045d9c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background: #03da93;
+}
+
+/* Admin page container */
+.admin-container {
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    gap: 40px;
+    height: 70vh;
+}
+
+/* Admin boxes (clickable) */
+.admin-box {
+    width: 200px;
+    height: 150px;
+    background-color: #00879E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 20px;
+}
+
+/* Hover effect */
+.admin-box:hover {
+    background-color: #FFAB5B;
+    transform: scale(1.05);
+}
+
+/* Header and menu */
+.menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Events page container */
+.events-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 60vh;
+}
+
+/* Event boxes */
+.event-box {
+    width: 220px;
+    height: 160px;
+    background-color: #00879E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.event-box:hover {
+    background-color: #FFAB5B;
+    transform: scale(1.05);
+}
+
+/* Form styling for Add Event page */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FFAB5B;
+}
+
+/* List styling for past and upcoming events */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Event container */
+.event-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Event box styling */
+.event-box {
+    background-color: #00879E;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.event1-box {
+    background-color: #00879E;
+    color: #fff;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.event1-box button{
+    background-color: #2b2b2b;
+}
+.event-box:hover {
+    transform: scale(1.05);
+}
+
+/* Headings inside event boxes */
+.event-box h1 {
+    margin-bottom: 10px;
+    color: #FFF2DB;
+    font-weight: bolder;
+}
+
+/* Paragraph inside event boxes */
+.event-box p {
+    color: #444;
+    font-size: 16px;
+}
+
+.account-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Account box styling */
+.account-box {
+    background-color: #00879E; /* Your color */
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.account-box:hover {
+    transform: scale(1.05);
+}
+
+.account-box h1 {
+    margin-bottom: 10px;
+    color: #FFF2DB; /* Your button hover color */
+    font-weight: 500;
+}
+
+/* Paragraph inside account boxes */
+.account-box p {
+    color: white;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.account-box button {
+    background-color: white;
+    color: #00879E;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.account-box:hover {
+    background-color: #FFAB5B;
+}
+
+.account-box button:hover {
+    background-color: #00879E;
+    color: white;
+}
+
+/* Cost Page Styles */
+.cost-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cost-box {
+    background-color: #00879E;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.cost-box:hover {
+    transform: scale(1.05);
+    background-color: #FFAB5B;
+}
+
+.cost-box h3 {
+    margin-bottom: 10px;
+    color: #FFF2DB;
+}
+
+.cost-box button {
+    background-color: white;
+    color: #00879E;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cost-box button:hover {
+    background-color: #00879E;
+    color: white;
+}
+
+/* Donation Table Styles */
+.donation-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.donation-table th, .donation-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.donation-table th {
+    background-color: #00879E;
+    color: white;
+}
+
+.donation-table tfoot td {
+    background-color: #FFAB5B;
+    font-weight: bold;
+}
+
+.month-table {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #00879E;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.sum-row td {
+    background-color: #FFAB5B !important; /* Ensures the background color applies */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #000; /* Adds a top border to separate it */
+}
+
+/* Style for the Add Cost button */
+.add-cost-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #00879E;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-cost-btn:hover {
+    background-color: #FFAB5B;
+}
+
+/* Modal styles (Pop-up Form) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    margin: 10% auto;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Form Fields */
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #00879E;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #FFAB5B;
+}
+
+/* Event List */
+.event-list {
+    margin-top: 60px; /* Space for the button */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 27%;
+    padding: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2%;
+}
+
+.event h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.event p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Join Button */
+.join-button {
+    background-color: #4CAF50; /* Charity-themed green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.join-button:hover {
+    background-color: #45a049;
+}
+
+.event img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FFAB5B;
+}
+
+/* Pop-up Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 340px;
+    z-index: 1000;
+}
+
+.popup h3 {
+    color: #00879E;
+}
+
+.popup p {
+    font-size: 18px;
+    color: #333;
+}
+
+.popup button {
+    background-color: #00879E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup button:hover {
+    background-color: #FFAB5B;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Volunteer Page Layout */
+.volunteer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Volunteer Picture */
+.volunteer-picture {
+    flex: 1;
+    text-align: center;
+}
+
+.volunteer-picture img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;  
+    border: 5px solid #00879E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* Style for the photo upload form */
+.volunteer-picture form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.volunteer-picture input[type="file"] {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.volunteer-picture button {
+    background-color: #00879E;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.volunteer-picture button:hover {
+    background-color: #FFAB5B;
+}
+
+/* Volunteer Details Section */
+.volunteer-details {
+    flex: 2;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.info-section {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-section h2 {
+    color: #00879E;
+    margin-bottom: 10px;
+}
+
+/* Edit Button Container */
+.edit-button-container {
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Edit Button */
+.edit-button {
+    background-color: #00879E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-button:hover {
+    background-color: #e67e22;
+}
+
+/* Edit Form */
+#editForm {
+    margin-top: 20px;
+}
+
+#editForm input,
+#editForm select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#editForm button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#editForm button[type="button"] {
+    background-color: #e74c3c;
+}
+
+#editForm button[type="button"]:hover {
+    background-color: #c0392b;
+}
+
+/* Aligning Labels and Values */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.info-table td {
+    padding: 8px 0;
+}
+
+/* Left-align labels */
+.info-label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Right-align values */
+.info-value {
+    text-align: left;
+    color: #555;
+}
+
+/* Sections */
+.event-section, .certificate-section {
+    padding: 15px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    color: #00879E;
+}
+
+button {
+    background-color: #00879E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FFAB5B;
+}
+
+/* Add back the volunteerMessage style */
+#volunteerMessage {
+    margin-top: 10px;
+    color: green;
+}
+.event-box button {
+    background-color: white;
+    color: #00879E;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.event-box:hover {
+    background-color: #FFAB5B;
+}
+
+.event-box button:hover {
+    background-color: #00879E;
+    color: white;
+}
+.certificate-section select {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.admin-container{
+    display: flex;
+    flex-direction: row;
+   
+}
+/* .manage_users{
+    display: flex;
+    flex-direction: row;
+   
+} */
